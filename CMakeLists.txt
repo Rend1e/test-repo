@@ -5,4 +5,5 @@ add_executable(${PROJECT_NAME}
     main.cpp
     candle.cpp
     candle.h
+    tests.h
     )
