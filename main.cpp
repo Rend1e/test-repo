@@ -1,7 +1,7 @@
 ﻿#include <vector>
 #include <functional>
 #include <iostream>
-
+#include "candle.h"
 #include "tests.h"
 
 //массив всех тестов, который мы заполняем в функции initTests

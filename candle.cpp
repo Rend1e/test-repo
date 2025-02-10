@@ -11,7 +11,22 @@ Candle::Candle(Price _open, Price _high, Price _low, Price _close)
 {
 }
 
-bool Candle::body_contains(const Price &price) const noexcept
+bool Candle::body_contains1(const Price &price) const noexcept
+{
+	if(is_green())
+	{
+		const Price &max = close;
+		const Price &min = open;
+		return price >= min && price <= max;
+	}
+	else
+	{
+		const Price &max = open;
+		const Price &min = close;
+		return price >= min && price <= max;
+	}
+}
+bool Candle::body_contains2(const Price &price) const noexcept
 {
 	if(is_green())
 	{
@@ -27,7 +42,31 @@ bool Candle::body_contains(const Price &price) const noexcept
 	}
 }
 
-bool Candle::contains(const Price &price) const noexcept
+bool Candle::body_contains3(const Price &price) const noexcept
+{
+	if(is_green())
+	{
+		const Price &max = close;
+		const Price &min = open;
+		return price >= min && price <= max;
+	}
+	else
+	{
+		const Price &max = open;
+		const Price &min = close;
+		return price >= min && price <= max;
+	}
+}
+
+bool Candle::contains1(const Price &price) const noexcept
+{
+	return price >= low && price <= high;
+}
+bool Candle::contains2(const Price &price) const noexcept
+{
+	return price >= low && price <= high;
+}
+bool Candle::contains3(const Price &price) const noexcept
 {
 	return price >= low && price <= high;
 }
