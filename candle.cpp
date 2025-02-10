@@ -13,7 +13,7 @@ Candle::Candle(Price _open, Price _high, Price _low, Price _close)
 
 bool Candle::body_contains1(const Price &price) const noexcept
 {
-	if(is_green())
+	if(is_green1())
 	{
 		const Price &max = close;
 		const Price &min = open;
@@ -28,7 +28,7 @@ bool Candle::body_contains1(const Price &price) const noexcept
 }
 bool Candle::body_contains2(const Price &price) const noexcept
 {
-	if(is_green())
+	if(is_green2())
 	{
 		const Price &max = close;
 		const Price &min = open;
@@ -44,7 +44,7 @@ bool Candle::body_contains2(const Price &price) const noexcept
 
 bool Candle::body_contains3(const Price &price) const noexcept
 {
-	if(is_green())
+	if(is_green3())
 	{
 		const Price &max = close;
 		const Price &min = open;
@@ -97,12 +97,28 @@ double Candle::body_size3() const noexcept
 	return std::abs(open - close);
 }
 
-bool Candle::is_green() const noexcept
+bool Candle::is_green1() const noexcept
+{
+	return close > open;
+}
+bool Candle::is_green2() const noexcept
+{
+	return close > open;
+}
+bool Candle::is_green3() const noexcept
 {
 	return close > open;
 }
 
-bool Candle::is_red() const noexcept
+bool Candle::is_red1() const noexcept
+{
+	return close < open;
+}
+bool Candle::is_red2() const noexcept
+{
+	return close < open;
+}
+bool Candle::is_red3() const noexcept
 {
 	return close < open;
 }

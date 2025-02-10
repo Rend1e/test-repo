@@ -40,7 +40,11 @@ public:
 	double body_size2() const noexcept;
 	double body_size3() const noexcept;
 
-	bool is_green() const noexcept;
-	bool is_red() const noexcept;
+	bool is_green1() const noexcept;
+	bool is_green2() const noexcept;
+	bool is_green3() const noexcept;
+	bool is_red1() const noexcept;
+	bool is_red2() const noexcept;
+	bool is_red3() const noexcept;
 
 };
