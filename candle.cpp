@@ -71,7 +71,15 @@ bool Candle::contains3(const Price &price) const noexcept
 	return price >= low && price <= high;
 }
 
-double Candle::full_size() const noexcept
+double Candle::full_size1() const noexcept
+{
+	return std::abs(low - high);
+}
+double Candle::full_size2() const noexcept
+{
+	return std::abs(low - high);
+}
+double Candle::full_size3() const noexcept
 {
 	return std::abs(low - high);
 }

@@ -31,7 +31,9 @@ public:
 	bool contains3(const Price& price) const noexcept;
 
 	//возвращает размер целой свечи, включая тени
-	double full_size() const noexcept;
+	double full_size1() const noexcept;
+	double full_size2() const noexcept;
+	double full_size3() const noexcept;
 
 	//возвращает размер тела свечи
 	double body_size() const noexcept;
