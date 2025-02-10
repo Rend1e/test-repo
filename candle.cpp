@@ -84,7 +84,15 @@ double Candle::full_size3() const noexcept
 	return std::abs(low - high);
 }
 
-double Candle::body_size() const noexcept
+double Candle::body_size1() const noexcept
+{
+	return std::abs(open - close);
+}
+double Candle::body_size2() const noexcept
+{
+	return std::abs(open - close);
+}
+double Candle::body_size3() const noexcept
 {
 	return std::abs(open - close);
 }

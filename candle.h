@@ -36,7 +36,9 @@ public:
 	double full_size3() const noexcept;
 
 	//возвращает размер тела свечи
-	double body_size() const noexcept;
+	double body_size1() const noexcept;
+	double body_size2() const noexcept;
+	double body_size3() const noexcept;
 
 	bool is_green() const noexcept;
 	bool is_red() const noexcept;
