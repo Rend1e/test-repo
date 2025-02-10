@@ -35,6 +35,25 @@ void initTests()
   tests.push_back(test1);
   tests.push_back(test2);
   tests.push_back(test3);
+  tests.push_back(body_contains1);
+  tests.push_back(body_contains2);
+  tests.push_back(body_contains3);
+  tests.push_back(contains1);
+  tests.push_back(contains2);
+  tests.push_back(contains3);
+  tests.push_back(full_size1);
+  tests.push_back(full_size2);
+  tests.push_back(full_size3);
+  tests.push_back(body_size1);
+  tests.push_back(body_size2);
+  tests.push_back(body_size3);
+  tests.push_back(is_green1);
+  tests.push_back(is_green2);
+  tests.push_back(is_green3);
+  tests.push_back(is_red1);
+  tests.push_back(is_red2);
+  tests.push_back(is_red3);
+
   //tests.push_back(test4);
   //tests.push_back(test5);
 }
